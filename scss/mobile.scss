@@ -1,0 +1,145 @@
+//mainheader
+#mainheader {
+    .navbar {
+        .logo {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            width: 200px;
+            margin-top: 1rem;
+           
+        }
+        ul {
+            float: none;
+            text-align: center;
+            margin-top: 0;
+            li {
+                display: block;
+                margin: 1rem 0;
+                text-align: center;
+            }
+        }
+    }
+}
+//showcase
+#showcase {
+    .showcase-container {
+        padding-top: 2rem;
+        text-align: center;
+        h1 {
+            font-size: 2.5rem;
+            
+            text-align: center;
+        }
+        p {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+//bio
+#bio {
+    text-align: center;
+    .bio-row {
+        display: block;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+//first
+#first-date {
+    .first-date-row {
+        display: block;
+    }
+}
+
+//disclaimer
+#disclaimer {
+    .disclaimer-block {
+        display: block;
+    }
+}
+
+//doubts
+#doubts {
+    text-align: center;
+    .doubts-row {
+        display: block;
+        h1 {
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+//social
+#social {
+    ul {
+        list-style: none;
+    }
+    margin: 0 auto;
+    text-align: center;
+    .social-row {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .social-row-1 {
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+//lorem
+#lorem {
+    text-align: center;
+}
+
+//dates
+#dates {
+    .dates-row{
+        display: block;
+        .dates.box {
+            .box-1 {
+                color: red;
+                margin: 100px;
+            }
+        }
+    }
+}
+
+//testimonials
+#testimonials {
+    .testimonials-row {
+        display: block;
+       .test-box-1 {
+        margin-bottom: 2rem;
+       }
+    }
+}
+
+//services
+#services {
+    width: 80%;
+    
+}
+
+//página acerca
+#about {
+    margin:  0 auto;
+    text-align: left;
+    .about-row {
+        .about-row-1 {
+            display: block;
+        }
+        .about-row-2 {
+            display: block;
+            img {
+                width: 70%;
+                height: 80%;
+            }
+        }
+    }
+}

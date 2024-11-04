@@ -1,0 +1,113 @@
+#mainheader .navbar .logo {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 200px;
+  margin-top: 1rem;
+}
+#mainheader .navbar ul {
+  float: none;
+  text-align: center;
+  margin-top: 0;
+}
+#mainheader .navbar ul li {
+  display: block;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+#showcase .showcase-container {
+  padding-top: 2rem;
+  text-align: center;
+}
+#showcase .showcase-container h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+#showcase .showcase-container p {
+  width: 100%;
+  text-align: center;
+}
+
+#bio {
+  text-align: center;
+}
+#bio .bio-row {
+  display: block;
+}
+#bio .bio-row img {
+  width: 100%;
+}
+
+#first-date .first-date-row {
+  display: block;
+}
+
+#disclaimer .disclaimer-block {
+  display: block;
+}
+
+#doubts {
+  text-align: center;
+}
+#doubts .doubts-row {
+  display: block;
+}
+#doubts .doubts-row h1 {
+  margin-bottom: 2rem;
+}
+
+#social {
+  margin: 0 auto;
+  text-align: center;
+}
+#social ul {
+  list-style: none;
+}
+#social .social-row {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+#social .social-row-1 {
+  text-align: center;
+  margin: 0 auto;
+}
+
+#lorem {
+  text-align: center;
+}
+
+#dates .dates-row {
+  display: block;
+}
+#dates .dates-row .dates.box .box-1 {
+  color: red;
+  margin: 100px;
+}
+
+#testimonials .testimonials-row {
+  display: block;
+}
+#testimonials .testimonials-row .test-box-1 {
+  margin-bottom: 2rem;
+}
+
+#services {
+  width: 80%;
+}
+
+#about {
+  margin: 0 auto;
+  text-align: left;
+}
+#about .about-row .about-row-1 {
+  display: block;
+}
+#about .about-row .about-row-2 {
+  display: block;
+}
+#about .about-row .about-row-2 img {
+  width: 70%;
+  height: 80%;
+}/*# sourceMappingURL=mobile.css.map */
