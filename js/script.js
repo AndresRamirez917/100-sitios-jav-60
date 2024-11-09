@@ -17,7 +17,8 @@
    }
 
    async function getData() {
-
+	const result = await fetch('https://randomuser.me/api?results=4')
+	const testimonials = await result.json();
    }
 
    getData
