@@ -92,6 +92,9 @@
 #testimonials .testimonials-row .test-box-1 {
   margin-bottom: 2rem;
 }
+#testimonials .testimonials-row .test-box-1 img {
+  width: 50%;
+}
 
 #services {
   width: 80%;
