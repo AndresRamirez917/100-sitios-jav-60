@@ -54,6 +54,26 @@
 				 })
 				 return false;
 		}
+		const emailValido = (email) => {
+			return /^[^\s@]+@[^\s@]+\.[^\s@]+$/ .test(email.value)
+		}
+		if(!emailValido(email)){
+			swal({
+				title: `El campo ${messageArr[1]} no tiene el formato correcto`,
+				icon: "error",
+				 })
+				 return false;
+		}
+		swal({
+			title: `Datos enviados satisfactoriamente`,
+			icon: "success",
+			 });
+			 nombre.value = "";
+			 email.value = "";
+			 fecha.value = "";
+			 hora.value = "";
+			 mensaje.value = "";
+		return true;
 	}
 }
 

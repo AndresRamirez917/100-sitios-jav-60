@@ -261,14 +261,14 @@ span {
 
 ::-moz-placeholder {
   font-family: "Font Awesome 5 free";
-  font-weight: 500;
+  font-weight: 600;
   content: "\f007";
   text-align: right;
 }
 
 ::placeholder {
   font-family: "Font Awesome 5 free";
-  font-weight: 500;
+  font-weight: 600;
   content: "\f007";
   text-align: right;
 }
