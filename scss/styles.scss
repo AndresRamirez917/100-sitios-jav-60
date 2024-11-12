@@ -45,12 +45,18 @@ a {
     padding: 10px 20px;
     background: greenyellow;
     color: #fff;
+    &:hover {
+        background: orangered;
+    }
 } 
 
 .button-2 {
     background: orangered;
     color: #fff;
     padding: 10px 20px;
+    &:hover {
+        background: greenyellow;
+    }
 }
 
 .button-3 {
@@ -90,6 +96,13 @@ span {
                 display: inline-block;
                 margin-left: 1rem;
             }
+        }
+        .fa {
+            display: block;
+            text-align: center;
+            color: red;
+            margin: 0 auto;
+            color: transparent;
         }
     }   
 }

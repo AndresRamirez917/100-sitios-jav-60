@@ -10,7 +10,8 @@
  function myFunction() {
  	var x = document.getElementById("myTopnav");
  	if (x.className === "topnav") {
- 	  x.className += " responsive";
+		
+ 	  x.className += "responsive";
  	} else {
  	  x.className = "topnav";
  	}
@@ -53,7 +54,7 @@
 		a.href="citas.html";
 		a.className="btn button-2";
 		a.textContent="agenda tu cita";
-		p.textContent="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias assumenda quos eos quam possimus necessitatibus cupiditate accusamus provident accusantium fugit explicabo nihil cumque voluptas ab, illo temporibus esse ipsa debitis."
+		p.textContent="\"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias assumenda quos eos quam possimus necessitatibus cupiditate accusamus provident accusantium fugit explicabo nihil cumque voluptas ab, illo temporibus esse ipsa debitis.\""
 		h5.textContent = `${user.name.first} ${user.name.last}`;
 		disclaimer_block.appendChild(a);
 		disclaimer_block.appendChild(img)
