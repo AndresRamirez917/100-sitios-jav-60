@@ -298,6 +298,13 @@ span {
     gap: 50px;
 }
 
+::placeholder {
+    font-family: "Font Awesome 5 free";
+    font-weight: 500;
+    content: "\f007";
+    text-align: right;
+}
+
 //testimonials
 #testimonials {
     width: 90%;

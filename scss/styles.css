@@ -259,6 +259,20 @@ span {
   gap: 50px;
 }
 
+::-moz-placeholder {
+  font-family: "Font Awesome 5 free";
+  font-weight: 500;
+  content: "\f007";
+  text-align: right;
+}
+
+::placeholder {
+  font-family: "Font Awesome 5 free";
+  font-weight: 500;
+  content: "\f007";
+  text-align: right;
+}
+
 #testimonials {
   width: 90%;
   margin: 0 auto;
