@@ -71,7 +71,7 @@ span {
 
 #mainheader .navbar .logo {
   width: 200px;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 #mainheader .navbar ul {
   font-size: 0.8rem;
@@ -157,11 +157,18 @@ span {
   margin-top: 3rem;
   text-align: center;
 }
+#disclaimer .disclaimer-block img {
+  display: block;
+  margin: 0 auto;
+  padding-top: 2rem;
+  border-radius: 50%;
+}
 #disclaimer .disclaimer-block p {
-  margin-top: 10rem;
+  margin-top: 3rem;
   font-family: "Courier New", Courier, monospace;
 }
 #disclaimer .disclaimer-block h5 {
+  margin-top: 1rem;
   margin-bottom: 3rem;
 }
 
@@ -296,6 +303,7 @@ span {
 #testimonials .testimonials-row .test-box-1 img {
   width: 30%;
   border-radius: 50%;
+  margin-bottom: 1rem;
 }
 #testimonials .testimonials-row .test-box-1 p {
   font-family: "Times New Roman", Times, serif;

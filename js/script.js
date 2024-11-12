@@ -37,25 +37,53 @@
 	});
    }
 
+   getData()
+
+   async function getOneData() {
+	const result = await fetch('https://randomuser.me/api?results=1')
+	const oneUser = await result.json();
+	const disclaimer_block = document.querySelector('.disclaimer-block');
+	disclaimer_block.innerHTML = "";
+	oneUser.results.forEach(user => {		
+		const a = document.createElement('a');
+		const img = document.createElement('img')
+		const p = document.createElement('p');
+		const h5 = document.createElement('h5');
+		img.src = `${user.picture.large}`
+		a.href="citas.html";
+		a.className="btn button-2";
+		a.textContent="agenda tu cita";
+		p.textContent="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias assumenda quos eos quam possimus necessitatibus cupiditate accusamus provident accusantium fugit explicabo nihil cumque voluptas ab, illo temporibus esse ipsa debitis."
+		h5.textContent = `${user.name.first} ${user.name.last}`;
+		disclaimer_block.appendChild(a);
+		disclaimer_block.appendChild(img)
+		disclaimer_block.appendChild(p);
+		disclaimer_block.appendChild(h5)
+
+
+	})
+   }
+   getOneData()
+
    const btn_validar = document.getElementById('btn-validar').onclick = (e) => {
-	e.preventDefault();
-	const nombre = document.getElementById('nombre');
-	const email = document.getElementById('email');
-	const fecha = document.getElementById('fecha');
-	const hora = document.getElementById('hora');
-	const mensaje = document.getElementById('mensaje');
-	const arr = [nombre, email, fecha, hora, mensaje];
-	const messageArr = ["Nombre", "Email", "Fecha", "Hora", "Mensaje"];
-	for(i = 0; i < arr.length; i++){
-		if(arr[i].value == ""){
-			swal({
-				title: `El campo ${messageArr[i]} no puede estar vacío`,
-				icon: "error",
-				 })
-				 return false;
-		}
-		const emailValido = (email) => {
-			return /^[^\s@]+@[^\s@]+\.[^\s@]+$/ .test(email.value)
+	//const btn_validar = document.getElementById('btn-validar');
+	//function validar(){
+		e.preventDefault();
+		const nombre = document.getElementById('nombre');
+		const email = document.getElementById('email');
+		const fecha = document.getElementById('fecha');
+		const hora = document.getElementById('hora');
+		const mensaje = document.getElementById('mensaje');
+		const arr = [nombre, email, fecha, hora, mensaje];
+		const messageArr = ["Nombre", "Email", "Fecha", "Hora", "Mensaje"];
+		for(i = 0; i < arr.length; i++){
+			if(arr[i].value == ""){
+				swal({
+					title: `El campo ${messageArr[i]} no puede estar vacío`,
+					icon: "error",
+					 })
+					 return false;
+			}	
 		}
 		if(!emailValido(email)){
 			swal({
@@ -64,6 +92,7 @@
 				 })
 				 return false;
 		}
+	
 		swal({
 			title: `Datos enviados satisfactoriamente`,
 			icon: "success",
@@ -74,7 +103,13 @@
 			 hora.value = "";
 			 mensaje.value = "";
 		return true;
-	}
+	//}
+	
+}
+const emailValido = (email) => {
+	return /^[^\s@]+@[^\s@]+\.[^\s@]+$/ .test(email.value)
 }
 
-   getData()
+
+//btn_validar.addEventListener("click", validar)
+   
